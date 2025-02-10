@@ -1,100 +1,146 @@
-/* Style global de la page */
-body {
-    font-family: Arial, sans-serif;
+/* RESET - Réinitialisation des marges et paddings */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
 }
 
-/* En-tête */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F0F1EB; /* Beige clair */
+    color: #3D4C3A; /* Vert olive doux */
+    line-height: 1.6;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 header {
     text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
+    padding: 50px;
+    background-color: #D9D5C1; /* Beige pâle */
+    border-bottom: 3px solid #A8B89F; /* Vert olive doux */
 }
 
-/* Barre de navigation */
+header h1 {
+    font-size: 3rem;
+    color: #2C3A28; /* Vert olive profond */
+}
+
 nav {
-    background-color: #4CAF50;
-    padding: 10px 0;
+    background-color: #D9D5C1; /* Beige pâle */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: #3D4C3A; /* Vert olive doux */
     text-decoration: none;
+    font-size: 1.1rem;
     padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #45a049;
-    border-radius: 5px;
+    background-color: #A8B89F; /* Vert olive clair */
+    color: #fff;
 }
 
-/* Conteneur principal */
 .main-container {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    margin: 50px auto;
     max-width: 1200px;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-/* Sections */
 .section {
     background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    flex: 1;
-    margin: 10px;
+    padding: 30px;
+    border-radius: 15px;
+    width: 30%;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .section h2 {
-    color: #333;
+    font-size: 1.8rem;
+    color: #2C3A28; /* Vert olive profond */
+    margin-bottom: 20px;
 }
 
 .section p {
-    font-size: 16px;
-    color: #555;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #5A6C58; /* Gris olive doux */
 }
 
-/* Boutons */
 .btn {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
+    padding: 12px 30px;
+    background-color: #A8B89F; /* Vert olive clair */
+    color: #fff;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #45a049;
+    background-color: #6A7A64; /* Vert olive plus foncé */
+    transform: scale(1.1);
 }
 
-/* Footer */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #D9D5C1; /* Beige pâle */
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 20px 0;
+    color: #2C3A28; /* Vert olive profond */
 }
+
+footer p {
+    font-size: 1rem;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        width: 80%;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+}
+
