@@ -3,58 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Sportif</title>
+    <title>Quiz Sport</title>
     <link rel="stylesheet" href="sport.css">
 </head>
 <body>
-    <h1>Quiz Sportif</h1>
+    <h1>Quiz Sport</h1>
 
     <form action="#" method="post">
         <div>
-            <p>1. Quel pays a remporté la Coupe du Monde de football 2018 ?</p>
+            <p>1. Le football est le sport le plus populaire au monde ?</p>
             <label>
-                <input type="radio" name="q1" value="France"> France
+                <input type="radio" name="q1" value="Oui"> Oui
             </label><br>
             <label>
-                <input type="radio" name="q1" value="Brésil"> Brésil
-            </label><br>
-            <label>
-                <input type="radio" name="q1" value="Allemagne"> Allemagne
-            </label><br>
-            <label>
-                <input type="radio" name="q1" value="Argentine"> Argentine
+                <input type="radio" name="q1" value="Non"> Non
             </label>
         </div>
 
         <div>
-            <p>2. Qui est le joueur de tennis avec le plus de titres du Grand Chelem ?</p>
+            <p>2. Usain Bolt détient le record du monde du 100m ?</p>
             <label>
-                <input type="radio" name="q2" value="Roger Federer"> Roger Federer
+                <input type="radio" name="q2" value="Oui"> Oui
             </label><br>
             <label>
-                <input type="radio" name="q2" value="Rafael Nadal"> Rafael Nadal
-            </label><br>
-            <label>
-                <input type="radio" name="q2" value="Novak Djokovic"> Novak Djokovic
-            </label><br>
-            <label>
-                <input type="radio" name="q2" value="Pete Sampras"> Pete Sampras
+                <input type="radio" name="q2" value="Non"> Non
             </label>
         </div>
 
         <div>
-            <p>3. Quel est le pays hôte des Jeux Olympiques de 2024 ?</p>
+            <p>3. Michael Jordan a joué pour les Los Angeles Lakers ?</p>
             <label>
-                <input type="radio" name="q3" value="France"> France
+                <input type="radio" name="q3" value="Oui"> Oui
             </label><br>
             <label>
-                <input type="radio" name="q3" value="Japon"> Japon
-            </label><br>
-            <label>
-                <input type="radio" name="q3" value="Brésil"> Brésil
-            </label><br>
-            <label>
-                <input type="radio" name="q3" value="Australie"> Australie
+                <input type="radio" name="q3" value="Non"> Non
             </label>
         </div>
 

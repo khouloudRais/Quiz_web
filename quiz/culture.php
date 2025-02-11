@@ -3,58 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz de Culture Générale</title>
+    <title>Quiz Culture Générale</title>
     <link rel="stylesheet" href="culture.css">
 </head>
 <body>
-    <h1>Quiz de Culture Générale</h1>
+    <h1>Quiz Culture Générale</h1>
 
     <form action="#" method="post">
         <div>
-            <p>1. Qui a écrit "Les Misérables" ?</p>
+            <p>1. "Les Misérables" a été écrit par Victor Hugo ?</p>
             <label>
-                <input type="radio" name="q1" value="Victor Hugo"> Victor Hugo
+                <input type="radio" name="q1" value="Oui"> Oui
             </label><br>
             <label>
-                <input type="radio" name="q1" value="Émile Zola"> Émile Zola
-            </label><br>
-            <label>
-                <input type="radio" name="q1" value="Honoré de Balzac"> Honoré de Balzac
-            </label><br>
-            <label>
-                <input type="radio" name="q1" value="Gustave Flaubert"> Gustave Flaubert
+                <input type="radio" name="q1" value="Non"> Non
             </label>
         </div>
 
         <div>
-            <p>2. Quelle est la capitale de la France ?</p>
+            <p>2. La première guerre mondiale a commencé en 1914 ?</p>
             <label>
-                <input type="radio" name="q2" value="Paris"> Paris
+                <input type="radio" name="q2" value="Oui"> Oui
             </label><br>
             <label>
-                <input type="radio" name="q2" value="Lyon"> Lyon
-            </label><br>
-            <label>
-                <input type="radio" name="q2" value="Marseille"> Marseille
-            </label><br>
-            <label>
-                <input type="radio" name="q2" value="Nice"> Nice
+                <input type="radio" name="q2" value="Non"> Non
             </label>
         </div>
 
         <div>
-            <p>3. Qui a peint "La Joconde" ?</p>
+            <p>3. Albert Einstein a inventé la théorie de la relativité ?</p>
             <label>
-                <input type="radio" name="q3" value="Léonard de Vinci"> Léonard de Vinci
+                <input type="radio" name="q3" value="Oui"> Oui
             </label><br>
             <label>
-                <input type="radio" name="q3" value="Pablo Picasso"> Pablo Picasso
-            </label><br>
-            <label>
-                <input type="radio" name="q3" value="Vincent van Gogh"> Vincent van Gogh
-            </label><br>
-            <label>
-                <input type="radio" name="q3" value="Claude Monet"> Claude Monet
+                <input type="radio" name="q3" value="Non"> Non
             </label>
         </div>
 
