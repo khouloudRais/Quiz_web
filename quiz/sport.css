@@ -1,29 +1,41 @@
-/* Général */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
-    background-color: #f4f1eb; /* Beige clair */
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    background-image: url(image/sport.jpeg);
+    
     display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Alignement en haut */
     flex-direction: column;
-    min-height: 100vh;
-    color: #4b4a40; /* Vert olive foncé */
-    padding: 20px;
+    justify-content: flex-start;
+    align-items: center;
+
+      
+       background-image: url('image/sport.jpeg'); 
+       background-size: cover; 
+       background-position: center; 
+       background-repeat: no-repeat;
+       position: relative;
+       overflow: auto; 
+   
+    
 }
 
-/* Titre */
-/* Titre */
+
+header {
+    background-color: #1e3a8a; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
 /* Titre */
 h1 {
     font-size: 3rem;
     text-align: center;
-    color: #5a4b3d; /* Couleur de texte olive foncé */
+    color: #047e68; /* Couleur de texte olive foncé */
     margin-bottom: 2rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -39,7 +51,7 @@ h1::before {
     left: 0;
     width: 100%;
     height: 4px;
-    background: #a8a679; /* Barre de couleur olive */
+    background: #0648f0; /* Barre de couleur olive */
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.4s ease-in-out;
@@ -51,67 +63,66 @@ h1:hover::before {
 }
 
 h1:hover {
-    color: #6d5a47; /* Changer la couleur au survol */
+    color: #3025f4; /* Changer la couleur au survol */
 }
 
 
-
-/* Formulaire */
 form {
-    background-color: #ffffff;
+    background-color: white;
+    padding: 20px;
     border-radius: 10px;
-    padding: 2rem;
     width: 100%;
-    max-width: 600px; /* Largeur maximale pour le formulaire */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Questions */
-div p {
+    max-width: 600px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
     font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: #3e3d32; /* Vert olive doux */
 }
 
-/* Labels et réponses */
+
+form div p {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #374151; 
+}
+
+
 label {
     display: block;
-    padding: 1rem;
-    background: #e2d8c3; /* Beige plus foncé */
-    border-radius: 8px;
-    margin-bottom: 1rem;
+    background-color: #34d399; 
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
     cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 label:hover {
-    background: #d1c3a1; /* Beige moyen */
-    color: #5a4b3d; /* Vert olive */
-    transform: translateX(5px);
+    background-color: #10b981; 
 }
 
-/* Bouton */
+
 button {
-    background-color: #6d5a47; /* Olive foncé */
-    color: #ffffff;
-    font-size: 1.2rem;
-    padding: 1rem;
-    width: 100%;
+    background-color: #2563eb; 
+    color: white;
+    padding: 15px;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
+    font-size: 1.2rem;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #5a4b3d; /* Olive un peu plus clair */
-    transform: translateY(-5px);
+    background-color: #1e40af; 
 }
 
-button:active {
-    background-color: #4a3e31; /* Olive foncé */
+
+form div {
+    margin-bottom: 20px;
 }
+
+
+

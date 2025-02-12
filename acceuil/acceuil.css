@@ -1,146 +1,127 @@
-/* RESET - Réinitialisation des marges et paddings */
-* {
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #F0F1EB; /* Beige clair */
-    color: #3D4C3A; /* Vert olive doux */
-    line-height: 1.6;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    background-color: #f4f4f4;
 }
 
 header {
+    background-color: #3b4d61;
+    color: white;
     text-align: center;
-    padding: 50px;
-    background-color: #D9D5C1; /* Beige pâle */
-    border-bottom: 3px solid #A8B89F; /* Vert olive doux */
+    padding: 20px;
 }
 
-header h1 {
+h1 {
     font-size: 3rem;
-    color: #2C3A28; /* Vert olive profond */
+    margin: 0;
 }
 
+/* Navigation */
 nav {
-    background-color: #D9D5C1; /* Beige pâle */
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    background-color: #5a6b7a;
+    padding: 10px 0;
+    text-align: center;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: #3D4C3A; /* Vert olive doux */
+    color: white;
     text-decoration: none;
-    font-size: 1.1rem;
-    padding: 10px 20px;
-    border-radius: 30px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.2rem;
 }
 
 nav ul li a:hover {
-    background-color: #A8B89F; /* Vert olive clair */
-    color: #fff;
+    text-decoration: underline;
 }
 
+.btn-connexion {
+    background-color: #a8a679;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Main container */
 .main-container {
     display: flex;
-    justify-content: space-between;
-    margin: 50px auto;
-    max-width: 1200px;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 30px;
+    margin: 30px 0;
+    padding: 0 20px;
 }
 
+/* Section */
 .section {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    width: 30%;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
-.section:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+/* Section Image */
+.section-image {
+   
+        width: 100% !important; /* S'assure que l'image prend toute la largeur */
+        height: auto !important; /* Maintient l'aspect ratio de l'image */
+        object-fit: cover !important; /* Fait en sorte que l'image couvre tout l'espace disponible */
+        border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
 }
 
+.section:hover .section-image {
+    transform: scale(1.1); /* Un léger zoom au survol */
+}
+
+/* Section Title */
 .section h2 {
-    font-size: 1.8rem;
-    color: #2C3A28; /* Vert olive profond */
-    margin-bottom: 20px;
+    color: #5a4b3d;
+    font-size: 1.5rem;
 }
 
+/* Section Description */
 .section p {
+    color: #5a4b3d;
     font-size: 1rem;
-    margin-bottom: 20px;
-    color: #5A6C58; /* Gris olive doux */
+    margin: 10px 0;
 }
 
+/* Bouton Commencer */
 .btn {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: #A8B89F; /* Vert olive clair */
-    color: #fff;
+    background-color: #a8a679;
+    color: white;
+    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 5px;
     font-size: 1.1rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
 }
 
 .btn:hover {
-    background-color: #6A7A64; /* Vert olive plus foncé */
-    transform: scale(1.1);
+    background-color: #6d5a47;
 }
 
 footer {
-    background-color: #D9D5C1; /* Beige pâle */
+    background-color: #3b4d61;
+    color: white;
     text-align: center;
-    padding: 20px 0;
-    color: #2C3A28; /* Vert olive profond */
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
-
-footer p {
-    font-size: 1rem;
-}
-
-/* MOBILE STYLES */
-@media (max-width: 768px) {
-    .main-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .section {
-        width: 80%;
-    }
-
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    nav ul li a {
-        font-size: 1rem;
-    }
-}
-

@@ -15,14 +15,33 @@ body {
     min-height: 100vh;
     color: #4b4a40; /* Vert olive foncé */
     padding: 20px;
+
+    /* Image de fond */
+    background-image: url('image/histoire.jpg'); /* Remplace 'ton-image.jpg' par le chemin de ton image */
+    background-size: cover; /* Couvre toute la page */
+    background-position: center; /* Centrer l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    position: relative;
+    overflow: auto; /* Permet de scroller */
 }
 
-/* Titre */
+/* Superposition douce */
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); /* Ombre légère pour garder l'image visible mais lisible */
+    z-index: -1; /* S'assurer que l'image reste en dessous du contenu */
+}
+
 /* Titre */
 h1 {
     font-size: 3rem;
     text-align: center;
-    color: #5a4b3d; /* Couleur de texte olive foncé */
+    color: #e9c9ab; /* Couleur de texte olive foncé */
     margin-bottom: 2rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -53,10 +72,9 @@ h1:hover {
     color: #6d5a47; /* Changer la couleur au survol */
 }
 
-
 /* Formulaire */
 form {
-    background-color: #ffffff;
+    background-color: #e7c273;
     border-radius: 10px;
     padding: 2rem;
     width: 100%;
@@ -79,7 +97,7 @@ div p {
 label {
     display: block;
     padding: 1rem;
-    background: #e2d8c3; /* Beige plus foncé */
+    background: #9e8757; /* Beige plus foncé */
     border-radius: 8px;
     margin-bottom: 1rem;
     cursor: pointer;
