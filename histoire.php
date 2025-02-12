@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Histoire</title>
-    <link rel="stylesheet" href="histoire.css">
+    <link rel="stylesheet" href="css/histoire.css">
 </head>
 <body>
     <h1>Quiz Histoire</h1>
@@ -44,5 +44,10 @@
             <button type="submit">Soumettre</button>
         </div>
     </form>
+
+
+    <footer>
+        <p>&copy; 2025 Quiz & Découverte. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>

@@ -12,7 +12,7 @@ body {
     align-items: center;
 
       
-       background-image: url('image/sport.jpeg'); 
+       background-image: url('../image/ballon.jpeg'); 
        background-size: cover; 
        background-position: center; 
        background-repeat: no-repeat;
@@ -31,11 +31,11 @@ header {
     width: 100%;
 }
 
-/* Titre */
+
 h1 {
     font-size: 3rem;
     text-align: center;
-    color: #047e68; /* Couleur de texte olive foncé */
+    color: #047e68; 
     margin-bottom: 2rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -51,7 +51,7 @@ h1::before {
     left: 0;
     width: 100%;
     height: 4px;
-    background: #0648f0; /* Barre de couleur olive */
+    background: #364c84; 
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.4s ease-in-out;
@@ -63,7 +63,7 @@ h1:hover::before {
 }
 
 h1:hover {
-    color: #3025f4; /* Changer la couleur au survol */
+    color: #120e60; 
 }
 
 
@@ -126,3 +126,12 @@ form div {
 
 
 
+footer {
+    background-color: #98c5fa;
+    color: white;
+    text-align: center;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

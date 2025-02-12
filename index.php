@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page d'accueil</title>
-    <link rel="stylesheet" href="acceuil.css">
+    <link rel="stylesheet" href="css/acceuil.css">
 </head>
 <body>
     <header>
@@ -13,11 +13,10 @@
     
     <nav>
         <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#apropos">À propos</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#connexion" class="btn-connexion">Connexion</a></li>
+            <li><a href="index.php">Accueil</a></li>
+          
+            
+            <li><a href="connexion.php" class="btn-deconnexion">deconnexion</a></li>
         </ul>
     </nav>
 

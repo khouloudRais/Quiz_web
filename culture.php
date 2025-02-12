@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Culture Générale</title>
-    <link rel="stylesheet" href="culture.css">
+    <link rel="stylesheet" href="css/culture.css">
 </head>
 <body>
     <h1>Quiz Culture Générale</h1>
@@ -44,5 +44,10 @@
             <button type="submit">Soumettre</button>
         </div>
     </form>
+
+
+    <footer>
+        <p>&copy; 2025 Quiz & Découverte. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
