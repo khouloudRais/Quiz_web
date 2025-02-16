@@ -56,7 +56,14 @@ $db->disconnect();
     <link rel="stylesheet" href="css/histoire.css">
 </head>
 <body>
-    <h1>Quiz Histoire</h1>
+  <header>  <h1>Quiz Histoire</h1>
+</header>
+
+
+    <nav>
+        <a href="index.php">Accueil</a>
+        <a href="connexion.php">Déconnexion</a>
+    </nav>
 
     <form action="histoire.php" method="post">
         <div>

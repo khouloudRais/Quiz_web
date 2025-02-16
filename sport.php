@@ -77,7 +77,16 @@ $db->disconnect();
     <link rel="stylesheet" href="css/sport.css">
 </head>
 <body>
-    <h1>Quiz Sport</h1>
+<header>
+<h1>Quiz Sport</h1>
+
+    </header>
+    
+   
+    <nav>
+        <a href="index.php">Accueil</a>
+        <a href="connexion.php">Déconnexion</a>
+    </nav>
 
     <form action="#sport.php" method="post">
         <div>

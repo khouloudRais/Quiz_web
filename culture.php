@@ -56,7 +56,13 @@ $db->disconnect();
     <link rel="stylesheet" href="css/culture.css">
 </head>
 <body>
-    <h1>Quiz Culture Générale</h1>
+    <header> <h1>Quiz Culture Générale</h1>
+</header>
+<nav>
+        <a href="index.php">Accueil</a>
+        <a href="connexion.php">Déconnexion</a>
+    </nav>
+   
 
     <form action="culture.php" method="post">
         <div>
